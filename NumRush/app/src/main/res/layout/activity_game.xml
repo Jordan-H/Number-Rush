@@ -2,39 +2,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:id="@+id/Question3"
-        android:gravity="center"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Question3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
-        android:id="@+id/Question2"
-        android:gravity="center"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/Question2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="46dp"
-        android:id="@+id/Question1"
-        android:gravity="center"
-        android:textStyle="bold"/>
-
     <Button
         android:text="Button"
         android:layout_width="wrap_content"
@@ -44,7 +11,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginBottom="93dp"
         android:id="@+id/answer1"
-        android:onClick="checkAnswer"/>
+        android:onClick="checkAnswer"
+        android:background="@drawable/button_light"/>
 
     <Button
         android:text="Button"
@@ -53,7 +21,8 @@
         android:layout_alignTop="@+id/answer1"
         android:layout_centerHorizontal="true"
         android:id="@+id/answer2"
-        android:onClick="checkAnswer"/>
+        android:onClick="checkAnswer"
+        android:background="@drawable/button_light"/>
 
     <Button
         android:text="Button"
@@ -63,7 +32,8 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/answer3"
-        android:onClick="checkAnswer"/>
+        android:onClick="checkAnswer"
+        android:background="@drawable/button_light"/>
 
     <Button
         android:text="Button"
@@ -73,7 +43,8 @@
         android:layout_toLeftOf="@+id/answer3"
         android:layout_toStartOf="@+id/answer3"
         android:id="@+id/answer5"
-        android:onClick="checkAnswer"/>
+        android:onClick="checkAnswer"
+        android:background="@drawable/button_light"/>
 
     <Button
         android:text="Button"
@@ -83,25 +54,90 @@
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/answer1"
         android:layout_toEndOf="@+id/answer1"
-        android:onClick="checkAnswer"/>
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/timer"
-        android:gravity="center"
-        android:textStyle="bold"/>
+        android:onClick="checkAnswer"
+        android:background="@drawable/button_light"/>
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/Question3"
+        android:id="@+id/score"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:id="@+id/score"
-        android:textStyle="bold"/>
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Question1"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Question3"
+        android:gravity="center"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/score"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Question2"
+        android:gravity="center"
+        android:layout_below="@+id/Question3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="Score: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/score"
+        android:layout_toLeftOf="@+id/score"
+        android:layout_toStartOf="@+id/score"
+        android:id="@+id/scoreLabel"
+        android:textColor="@android:color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:text="Time: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeLabel"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
+        android:layout_alignBottom="@+id/timeLabel"
+        android:layout_toRightOf="@+id/timeLabel"
+        android:layout_toEndOf="@+id/timeLabel" />
+
+
 </RelativeLayout>

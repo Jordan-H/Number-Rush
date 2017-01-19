@@ -20,26 +20,40 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/highScore"
+        android:gravity="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
 
     <Button
         android:text="Start"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/startButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
         android:onClick="startGame"
-        />
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
-    <TextView
-        android:text="TextView"
+    <Button
+        android:text="Instructions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/instructionsButton"
         android:layout_below="@+id/startButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp"
-        android:id="@+id/highScore"
-        android:gravity="center"/>
+        android:layout_marginTop="36dp"
+        android:onClick="showInstructions"/>
 
 </RelativeLayout>
